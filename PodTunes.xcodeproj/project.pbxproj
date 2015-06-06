@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		993EEB981B22EDEF00A7A2DD /* NiceKit_Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993EEB971B22EDEF00A7A2DD /* NiceKit_Components.swift */; };
+		993EEB9C1B22EF0B00A7A2DD /* OBJCObjectFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 993EEB9B1B22EF0B00A7A2DD /* OBJCObjectFactory.m */; };
+		993EEB9E1B23112600A7A2DD /* NiceKit_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993EEB9D1B23112600A7A2DD /* NiceKit_Extensions.swift */; };
+		9960E69E1B0E27E70028BB8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9960E69D1B0E27E70028BB8F /* AppDelegate.swift */; };
+		9960E6A01B0E27E70028BB8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9960E69F1B0E27E70028BB8F /* ViewController.swift */; };
+		9960E6A31B0E27E70028BB8F /* PodTunes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9960E6A11B0E27E70028BB8F /* PodTunes.xcdatamodeld */; };
+		9960E6A51B0E27E70028BB8F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9960E6A41B0E27E70028BB8F /* Images.xcassets */; };
+		9960E6A81B0E27E70028BB8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9960E6A61B0E27E70028BB8F /* Main.storyboard */; };
+		9960E6B41B0E27E70028BB8F /* PodTunesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9960E6B31B0E27E70028BB8F /* PodTunesTests.swift */; };
+		9960E6BE1B0E30B00028BB8F /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9960E6BD1B0E30B00028BB8F /* Cartography.framework */; };
+		9960E6BF1B0E30B00028BB8F /* Cartography.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9960E6BD1B0E30B00028BB8F /* Cartography.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9960E6C21B0E34A30028BB8F /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9960E6C11B0E34A30028BB8F /* TableView.swift */; };
+		9960E6C81B0E3CE40028BB8F /* NiceKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9960E6C71B0E3CE40028BB8F /* NiceKit.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9960E6AE1B0E27E70028BB8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9960E6901B0E27E70028BB8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9960E6971B0E27E70028BB8F;
+			remoteInfo = PodTunes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9960E6C01B0E30B00028BB8F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9960E6BF1B0E30B00028BB8F /* Cartography.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		993EEB971B22EDEF00A7A2DD /* NiceKit_Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiceKit_Components.swift; sourceTree = "<group>"; };
+		993EEB991B22EF0A00A7A2DD /* PodTunes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PodTunes-Bridging-Header.h"; sourceTree = "<group>"; };
+		993EEB9A1B22EF0B00A7A2DD /* OBJCObjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBJCObjectFactory.h; sourceTree = "<group>"; };
+		993EEB9B1B22EF0B00A7A2DD /* OBJCObjectFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBJCObjectFactory.m; sourceTree = "<group>"; };
+		993EEB9D1B23112600A7A2DD /* NiceKit_Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiceKit_Extensions.swift; sourceTree = "<group>"; };
+		9960E6981B0E27E70028BB8F /* PodTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9960E69C1B0E27E70028BB8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9960E69D1B0E27E70028BB8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9960E69F1B0E27E70028BB8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9960E6A21B0E27E70028BB8F /* PodTunes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PodTunes.xcdatamodel; sourceTree = "<group>"; };
+		9960E6A41B0E27E70028BB8F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9960E6A71B0E27E70028BB8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9960E6AD1B0E27E70028BB8F /* PodTunesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodTunesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9960E6B21B0E27E70028BB8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9960E6B31B0E27E70028BB8F /* PodTunesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodTunesTests.swift; sourceTree = "<group>"; };
+		9960E6BD1B0E30B00028BB8F /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/Mac/Cartography.framework; sourceTree = "<group>"; };
+		9960E6C11B0E34A30028BB8F /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		9960E6C71B0E3CE40028BB8F /* NiceKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiceKit.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9960E6951B0E27E70028BB8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9960E6BE1B0E30B00028BB8F /* Cartography.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9960E6AA1B0E27E70028BB8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9960E68F1B0E27E70028BB8F = {
+			isa = PBXGroup;
+			children = (
+				9960E6BD1B0E30B00028BB8F /* Cartography.framework */,
+				9960E69A1B0E27E70028BB8F /* PodTunes */,
+				9960E6B01B0E27E70028BB8F /* PodTunesTests */,
+				9960E6991B0E27E70028BB8F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9960E6991B0E27E70028BB8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9960E6981B0E27E70028BB8F /* PodTunes.app */,
+				9960E6AD1B0E27E70028BB8F /* PodTunesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9960E69A1B0E27E70028BB8F /* PodTunes */ = {
+			isa = PBXGroup;
+			children = (
+				9960E69D1B0E27E70028BB8F /* AppDelegate.swift */,
+				9960E69F1B0E27E70028BB8F /* ViewController.swift */,
+				9960E6A41B0E27E70028BB8F /* Images.xcassets */,
+				9960E6A61B0E27E70028BB8F /* Main.storyboard */,
+				9960E6A11B0E27E70028BB8F /* PodTunes.xcdatamodeld */,
+				9960E69B1B0E27E70028BB8F /* Supporting Files */,
+				9960E6C11B0E34A30028BB8F /* TableView.swift */,
+				9960E6C71B0E3CE40028BB8F /* NiceKit.swift */,
+				993EEB9D1B23112600A7A2DD /* NiceKit_Extensions.swift */,
+				993EEB971B22EDEF00A7A2DD /* NiceKit_Components.swift */,
+				993EEB9A1B22EF0B00A7A2DD /* OBJCObjectFactory.h */,
+				993EEB9B1B22EF0B00A7A2DD /* OBJCObjectFactory.m */,
+				993EEB991B22EF0A00A7A2DD /* PodTunes-Bridging-Header.h */,
+			);
+			path = PodTunes;
+			sourceTree = "<group>";
+		};
+		9960E69B1B0E27E70028BB8F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9960E69C1B0E27E70028BB8F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9960E6B01B0E27E70028BB8F /* PodTunesTests */ = {
+			isa = PBXGroup;
+			children = (
+				9960E6B31B0E27E70028BB8F /* PodTunesTests.swift */,
+				9960E6B11B0E27E70028BB8F /* Supporting Files */,
+			);
+			path = PodTunesTests;
+			sourceTree = "<group>";
+		};
+		9960E6B11B0E27E70028BB8F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9960E6B21B0E27E70028BB8F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9960E6971B0E27E70028BB8F /* PodTunes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9960E6B71B0E27E70028BB8F /* Build configuration list for PBXNativeTarget "PodTunes" */;
+			buildPhases = (
+				9960E6941B0E27E70028BB8F /* Sources */,
+				9960E6951B0E27E70028BB8F /* Frameworks */,
+				9960E6961B0E27E70028BB8F /* Resources */,
+				9960E6C01B0E30B00028BB8F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PodTunes;
+			productName = PodTunes;
+			productReference = 9960E6981B0E27E70028BB8F /* PodTunes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9960E6AC1B0E27E70028BB8F /* PodTunesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9960E6BA1B0E27E70028BB8F /* Build configuration list for PBXNativeTarget "PodTunesTests" */;
+			buildPhases = (
+				9960E6A91B0E27E70028BB8F /* Sources */,
+				9960E6AA1B0E27E70028BB8F /* Frameworks */,
+				9960E6AB1B0E27E70028BB8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9960E6AF1B0E27E70028BB8F /* PBXTargetDependency */,
+			);
+			name = PodTunesTests;
+			productName = PodTunesTests;
+			productReference = 9960E6AD1B0E27E70028BB8F /* PodTunesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9960E6901B0E27E70028BB8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Vojtech Rinik";
+				TargetAttributes = {
+					9960E6971B0E27E70028BB8F = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					9960E6AC1B0E27E70028BB8F = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 9960E6971B0E27E70028BB8F;
+					};
+				};
+			};
+			buildConfigurationList = 9960E6931B0E27E70028BB8F /* Build configuration list for PBXProject "PodTunes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9960E68F1B0E27E70028BB8F;
+			productRefGroup = 9960E6991B0E27E70028BB8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9960E6971B0E27E70028BB8F /* PodTunes */,
+				9960E6AC1B0E27E70028BB8F /* PodTunesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9960E6961B0E27E70028BB8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9960E6A51B0E27E70028BB8F /* Images.xcassets in Resources */,
+				9960E6A81B0E27E70028BB8F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9960E6AB1B0E27E70028BB8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9960E6941B0E27E70028BB8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9960E6A31B0E27E70028BB8F /* PodTunes.xcdatamodeld in Sources */,
+				9960E6C81B0E3CE40028BB8F /* NiceKit.swift in Sources */,
+				9960E6C21B0E34A30028BB8F /* TableView.swift in Sources */,
+				993EEB9E1B23112600A7A2DD /* NiceKit_Extensions.swift in Sources */,
+				9960E6A01B0E27E70028BB8F /* ViewController.swift in Sources */,
+				9960E69E1B0E27E70028BB8F /* AppDelegate.swift in Sources */,
+				993EEB981B22EDEF00A7A2DD /* NiceKit_Components.swift in Sources */,
+				993EEB9C1B22EF0B00A7A2DD /* OBJCObjectFactory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9960E6A91B0E27E70028BB8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9960E6B41B0E27E70028BB8F /* PodTunesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9960E6AF1B0E27E70028BB8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9960E6971B0E27E70028BB8F /* PodTunes */;
+			targetProxy = 9960E6AE1B0E27E70028BB8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9960E6A61B0E27E70028BB8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9960E6A71B0E27E70028BB8F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9960E6B51B0E27E70028BB8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9960E6B61B0E27E70028BB8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9960E6B81B0E27E70028BB8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = PodTunes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PodTunes/PodTunes-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9960E6B91B0E27E70028BB8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = PodTunes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PodTunes/PodTunes-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		9960E6BB1B0E27E70028BB8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PodTunesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PodTunes.app/Contents/MacOS/PodTunes";
+			};
+			name = Debug;
+		};
+		9960E6BC1B0E27E70028BB8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PodTunesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PodTunes.app/Contents/MacOS/PodTunes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9960E6931B0E27E70028BB8F /* Build configuration list for PBXProject "PodTunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9960E6B51B0E27E70028BB8F /* Debug */,
+				9960E6B61B0E27E70028BB8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9960E6B71B0E27E70028BB8F /* Build configuration list for PBXNativeTarget "PodTunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9960E6B81B0E27E70028BB8F /* Debug */,
+				9960E6B91B0E27E70028BB8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9960E6BA1B0E27E70028BB8F /* Build configuration list for PBXNativeTarget "PodTunesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9960E6BB1B0E27E70028BB8F /* Debug */,
+				9960E6BC1B0E27E70028BB8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9960E6A11B0E27E70028BB8F /* PodTunes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9960E6A21B0E27E70028BB8F /* PodTunes.xcdatamodel */,
+			);
+			currentVersion = 9960E6A21B0E27E70028BB8F /* PodTunes.xcdatamodel */;
+			path = PodTunes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9960E6901B0E27E70028BB8F /* Project object */;
+}
