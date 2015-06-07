@@ -7,32 +7,32 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>BA17B116-C9AA-442E-91FA-CF662EB4FDB1</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>PodTunes</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>6FA72C04BE21138C9F137ED2C7F9EA5E79919260</key>
-		<string>rinik.net:vojto/podtunes.git</string>
+		<key>1C72A63560C4652734D9512E3A5D39134877F448</key>
+		<string>github.com:vojto/PodTunes.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>PodTunes.xcodeproj/project.xcworkspace</string>
+	<string>PodTunes.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>6FA72C04BE21138C9F137ED2C7F9EA5E79919260</key>
+		<key>1C72A63560C4652734D9512E3A5D39134877F448</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>rinik.net:vojto/podtunes.git</string>
+	<string>github.com:vojto/PodTunes.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>6FA72C04BE21138C9F137ED2C7F9EA5E79919260</string>
+	<string>1C72A63560C4652734D9512E3A5D39134877F448</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>6FA72C04BE21138C9F137ED2C7F9EA5E79919260</string>
+			<string>1C72A63560C4652734D9512E3A5D39134877F448</string>
 			<key>IDESourceControlWCCName</key>
 			<string>PodTunes</string>
 		</dict>

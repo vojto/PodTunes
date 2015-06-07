@@ -25,7 +25,7 @@ class ViewController: NSViewController {
 
 class MainComponent: Component {
     override func render() {
-        background = "ffffff"
+        background = Color(color: "ececec")
         
         let toolbar = Toolbar()
         toolbar.height = 40
@@ -37,18 +37,23 @@ class MainComponent: Component {
         
         
         let tabs = Tabs()
+        tabs.top = 40
+        tabs.height = 30
+        tabs.left = 0
+        tabs.right = 0
+        append(tabs)
     }
 }
 
 
 class Toolbar: Component {
     override func render() {
-        background = "00f"
+        background = Gradient(colors: ["ebebeb", "cfcfcf"])
     }
 }
 
 class Tabs: Component {
     override func render() {
-        background = "ffffff"
+        background = Color(color: "fff")
     }
 }

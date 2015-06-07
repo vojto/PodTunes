@@ -39,7 +39,7 @@ class Component: NSObject {
     var left: Number?
     
     // Style
-    var background: String?
+    var background: AbstractColor?
     
     var children: [Component] = []
     
@@ -124,13 +124,61 @@ class ComponentView: NSView {
     }
     
     override func drawRect(dirtyRect: NSRect) {
-        let background = component.background
         
-        println("Drawing component view with background: \(background)")
-        
-        if background != nil {
-            NSColor(hex: background!).set()
-            NSRectFill(bounds)
+        if let background = component.background {
+            if let color = background as? Color {
+                NSColor(hex: color.color).set()
+                NSRectFill(bounds)
+            } else if let gradient = background as? Gradient {
+                drawGradientBackground(gradient)
+            }
         }
     }
+    
+    func drawGradientBackground(gradient: Gradient) {
+        let color1 = NSColor(hex: gradient.colors[0])
+        let color2 = NSColor(hex: gradient.colors[1])
+        
+        let ctx = NSGraphicsContext.currentContext()!.CGContext
+        
+        let drawingRect = self.bounds
+        let gradient = createGradient(color1, color2: color2)
+        CGContextDrawLinearGradient(ctx, gradient, CGPointMake(NSMidX(drawingRect), NSMinY(drawingRect)),
+            CGPointMake(NSMidX(drawingRect), NSMaxY(drawingRect)), 0)
+    }
+    
+    func createGradient(color1: NSColor, color2: NSColor) -> CGGradient {
+        let space = CGColorSpaceCreateDeviceRGB()
+        let comps1 = CGColorGetComponents(color2.CGColor)
+        let comps2 = CGColorGetComponents(color1.CGColor)
+        var comps = [comps1[0], comps1[1], comps1[2], comps1[3], comps2[0], comps2[1], comps2[2], comps2[3]]
+        var locations: [CGFloat] = [0.0, 1.0]
+        let gradient = CGGradientCreateWithColorComponents(space, &comps, &locations, 2)
+        
+        return gradient
+    }
 }
+
+
+
+// Helpers
+
+class AbstractColor {
+}
+
+class Color: AbstractColor {
+    var color: String
+    
+    init(color: String) {
+        self.color = color
+    }
+}
+
+class Gradient: AbstractColor {
+    var colors: [String]
+    
+    init(colors: [String]) {
+        self.colors = colors
+    }
+}
+
